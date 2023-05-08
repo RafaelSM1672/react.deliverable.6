@@ -9,7 +9,7 @@ import NotFound from "./pages/NotFound";
 function App() {
 
   return (
-    <section>
+    <section className="grid grid-rows-[auto_1fr] font-['Yantramanav'] min-h-screen">
 
       <Header />
 
