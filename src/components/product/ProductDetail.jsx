@@ -60,14 +60,14 @@ const ProductDetail = ({productId}) => {
                         <article>
                             <h4 className="text-gray-400 font-bold">Quantity</h4>
                             <div className="flex items-center">
-                                <button className="border-[1px] p-2 px-4 hover:bg-red-500     hover:text-white transiton-colors">-</button>
+                                <button onClick={handleClickLess} className="border-[1px] p-2 px-4 hover:bg-red-500 hover:text-white transiton-colors">-</button>
                                 <span className="border-[1px] p-2 px-4 border-x-0">{counter}</span>
-                                <button className="border-[1px] p-2 px-4 hover:bg-red-500     hover:text-white transiton-colors">+</button>
+                                <button onClick={handleClickPlus} className="border-[1px] p-2 px-4 hover:bg-red-500 hover:text-white transiton-colors">+</button>
                             </div>
                         </article>
                     </section>
 
-                    <button className="w-full bg-red-500 py-2 text-white hover:bg-red-600 transiton-colors rounded-sm mt-6">
+                    <button onClick={handleClickAddToCart} className="w-full bg-red-500 py-2 text-white hover:bg-red-600 transiton-colors rounded-sm mt-6">
                         Add to cart <i className='bx bx-cart'></i>
                     </button>
 

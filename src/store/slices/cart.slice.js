@@ -31,8 +31,8 @@ export const getCartProducts = () => (dispatch) => {
 
 export const addProductCart = (data) => (dispatch) => {
     axiosEcommerce.post("cart", data, getConfig())
-      .then(() => dispatch(getCartProducts)
-      .catch((err) => console.log(err)));
+      .then(() => dispatch(getCartProducts()))
+      .catch((err) => console.log(err))
 }
 
 export default cartSlice.reducer
