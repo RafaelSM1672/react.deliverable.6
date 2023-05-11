@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { axiosEcommerce } from '../../utils/configAxios'
 import SimilarProducts from './SimilarProducts'
+import { addProductCart } from '../contexts/CartContext'
 
 const ProductDetail = ({productId}) => {
     const [productData, setProductData] = useState()
